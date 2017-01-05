@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 50px;
+			height: 50px;
+			background-color: #f00;
+			margin: 10px;
+
+		}
+		.box1{
+			-webkit-animation: mymove forwards 5s 1s linear;
+			-o-animation: mymove forwards 5s 1s linear;
+			animation: mymove forwards 5s 1s linear;
+		}
+			.box2{
+			-webkit-animation: mymove forwards 5s 1s ease;
+			-o-animation: mymove forwards 5s 1s ease;
+			animation: mymove forwards 5s 1s ease;
+		}
+			.box3{
+			-webkit-animation: mymove forwards 5s 1s ease-in;
+			-o-animation: mymove forwards 5s 1s ease-in;
+			animation: mymove forwards 5s 1s ease-in;
+		}
+			.box4{
+			-webkit-animation: mymove forwards 5s 1s ease-out;
+			-o-animation: mymove forwards 5s 1s ease-out;
+			animation: mymove forwards 5s 1s ease-out;
+		}
+			.box5{
+			-webkit-animation: mymove forwards 5s 1s ease-in-out;
+			-o-animation: mymove forwards 5s 1s ease-in-out;
+			animation: mymove forwards 5s 1s ease-in-out;
+		}
+
+		@keyframes mymove{
+			0%{
+				-webkit-transform: translate(0, 0);
+				-ms-transform: translate(0, 0);
+				-o-transform: translate(0, 0);
+				transform: translate(0, 0);
+			}
+			100%{
+				-webkit-transform: translate(800px, 0);
+				-ms-transform: translate(800px, 0);
+				-o-transform: translate(800px, 0);
+				transform: translate(800px, 0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="box5"></div>
+</body>
+</html>
